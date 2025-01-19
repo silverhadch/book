@@ -11,8 +11,6 @@ fn main() {
     let secret_number = rand::thread_rng().gen_range(1..=100);
     // ANCHOR_END: ch07-04
 
-    println!("The secret number is: {secret_number}");
-
     println!("Please input your guess.");
 
     let mut guess = String::new();
@@ -22,6 +20,9 @@ fn main() {
         .expect("Failed to read line");
 
     println!("You guessed: {guess}");
+
+    println!("The secret number is: {secret_number}");
+
     // ANCHOR: ch07-04
 }
 // ANCHOR_END: ch07-04
